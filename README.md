@@ -37,7 +37,9 @@ The results proved that a **$7 \times 7$ kernel** was the absolute optimal confi
 Medical datasets often contain corrupted or anomalous scans that confuse AI models. We implemented a rigorous **Outlier Removal** process to clean the dataset, which drastically improved the model's overall accuracy and learning stability. Furthermore, we applied a clinical technique called **Windowing** to selectively adjust the contrast—specifically highlighting blood, brain tissue, and bone so the hemorrhages become clearly visible.
 
 ### 4. Explainable AI (XAI) for Clinical Trust
-We integrated visual tools like **Grad-CAM++, LIME, and SHAP** to draw heatmaps directly onto the brain scans. These heatmaps show exactly which pixels the AI looked at to make its diagnosis, proving that it is detecting real medical anomalies.
+We integrated visual tools like **Grad-CAM++, LIME
+** to draw heatmaps directly onto the brain scans. These heatmaps show exactly which pixels the AI looked at to make its diagnosis, proving that it is detecting real medical anomalies.
+<img width="732" height="328" alt="Screenshot 2026-03-11 at 10 53 36 AM" src="https://github.com/user-attachments/assets/42a96dd3-f1a4-40c2-b352-f4b4e86b21a7" />
 
 ## 📁 Project Files Layout
 * **Data Pipeline:** `01_preprocessing.ipynb` ➔ `02_outlier_removal.ipynb` ➔ `03_data_augmentation.ipynb`
